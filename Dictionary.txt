@@ -1,0 +1,18 @@
+>>> services = {'ftp':21, 'ssh':22, 'smtp':25}
+>>> services.keys
+<built-in method keys of dict object at 0x02FFD720>
+>>> services.keys()
+dict_keys(['ftp', 'ssh', 'smtp'])
+>>> services.items()
+dict_items([('ftp', 21), ('ssh', 22), ('smtp', 25)])
+>>> 'ftp' in services
+True
+>>> 'tftp' in services
+False
+>>> services['ftp']
+21
+>>> services('ftp')
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    services('ftp')
+TypeError: 'dict' object is not callable

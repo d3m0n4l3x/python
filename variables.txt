@@ -1,0 +1,32 @@
+>>> a = 'test'
+>>> b = "test"
+>>> print a
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(a)?
+>>> print(a)
+test
+>>> print(b)
+test
+>>> type(a)
+<class 'str'>
+>>> type(b)
+<class 'str'>
+>>> c = 12
+>>> type(c)
+<class 'int'>
+>>> d = str(c)
+>>> type(d)
+<class 'str'>
+>>> print(a+b)
+testtest
+>>> print(a-b)
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    print(a-b)
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> portList=[21,22,23,80]
+>>> type(portList)
+<class 'list'>
+>>> portStatus=True
+>>> type(portStatus)
+<class 'bool'>
+>>> 

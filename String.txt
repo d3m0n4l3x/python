@@ -1,0 +1,13 @@
+>>> a = "Hello, world!"
+>>> print(a.upper())
+HELLO, WORLD!
+>>> print(a.lower())
+hello, world!
+>>> a.replace('world', 'man')
+'Hello, man!'
+>>> a.find('man')
+-1
+>>> print(a)
+Hello, world!
+>>> a.find('world')
+7

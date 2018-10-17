@@ -1,0 +1,21 @@
+>>> portList = []
+>>> portList.append(21)
+>>> portList.append(80)
+>>> portList.append(139)
+>>> portList.append(23)
+>>> print(portList)
+[21, 80, 139, 23]
+>>> portList.sort()
+>>> print(portList)
+[21, 23, 80, 139]
+>>> pos = portList.index(21)
+>>> print(pos)
+0
+>>> print(portList[0])
+21
+>>> portList.remove(139)
+>>> print(portList)
+[21, 23, 80]
+>>> print(len(portList))
+3
+>>> 
