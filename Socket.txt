@@ -1,0 +1,8 @@
+>>> import socket
+>>> socket.setdefaulttimeout(2)
+>>> s = socket.socket()
+>>> s.connect(("184.0.1.189", 22))
+>>> ans = s.recv(1024)
+>>> print(ans)
+b'SSH-2.0-OpenSSH_7.4p1 Debian-10\n'
+>>> 

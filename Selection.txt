@@ -1,0 +1,8 @@
+guest = int(input("Guess a number: "))
+if guest == 9:
+    print("You win")
+elif guest > 9:
+    print("Too high")
+else:
+    print("Too low")
+    
