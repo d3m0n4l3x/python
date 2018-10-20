@@ -1,0 +1,21 @@
+Python 2.7.14+ (default, Dec  5 2017, 15:17:02) 
+[GCC 7.2.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> import requests
+
+>>> r = requests.request('GET', 'https://www.google.com/')
+
+>>> dir(r)
+['__attrs__', '__bool__', '__class__', '__delattr__', '__dict__', '__doc__', '__enter__', '__exit__', '__format__', '__getattribute__', '__getstate__', '__hash__', '__init__', '__iter__', '__module__', '__new__', '__nonzero__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_content', '_content_consumed', '_next', 'apparent_encoding', 'close', 'connection', 'content', 'cookies', 'elapsed', 'encoding', 'headers', 'history', 'is_permanent_redirect', 'is_redirect', 'iter_content', 'iter_lines', 'json', 'links', 'next', 'ok', 'raise_for_status', 'raw', 'reason', 'request', 'status_code', 'text', 'url']
+
+>>> print(r.url)
+https://www.google.com/
+
+>>> print(r.status_code)
+200
+
+>>> print(r.headers)
+{'X-XSS-Protection': '1; mode=block', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'Set-Cookie': '1P_JAR=2018-10-20-03; expires=Mon, 19-Nov-2018 03:47:33 GMT; path=/; domain=.google.com, NID=141=LKEkE7LuflYfvE6dOP9DU7Ou8B74f9XVR809H7PdM31RE-3MWWqUzTTBVouAZiSok3qub-EQS1QHAmAPb6orIf_RFtqMMrqUMWiygtWQ-EwpuZKxtAw8zgvdcEONucf4; expires=Sun, 21-Apr-2019 03:47:33 GMT; path=/; domain=.google.com; HttpOnly', 'Expires': '-1', 'Server': 'gws', 'Cache-Control': 'private, max-age=0', 'Date': 'Sat, 20 Oct 2018 03:47:33 GMT', 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Alt-Svc': 'quic=":443"; ma=2592000; v="44,43,39,35"', 'Content-Type': 'text/html; charset=ISO-8859-1', 'X-Frame-Options': 'SAMEORIGIN'}
+
+>>> print(r.text)
