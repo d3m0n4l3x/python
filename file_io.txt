@@ -1,0 +1,37 @@
+#!/usr/bin/python
+#https://www.tutorialspoint.com/python/file_methods.htm
+
+#Open a file
+fo = open("foo.txt", "r+")
+print "Name of the file: ", fo.name
+print "Closed or not : ", fo.closed
+print "Opening mode : ", fo.mode
+print "Softspace flag : ", fo.softspace
+'''
+Name of the file:  foo.txt
+Closed or not :  False
+Opening mode :  r+               #Read and Write
+Softspace flag :  0
+'''
+
+#Write the file
+fo.write( "Python is a great language.\nYeah its great!!\n");
+
+#Read the file
+str = fo.read(10);
+print "Read String is : ", str
+# Check current position
+position = fo.tell();
+print "Current file position : ", position
+# Reposition pointer at the beginning once again
+position = fo.seek(0, 0);
+str = fo.read(10);
+print "Again read String is : ", str
+'''
+Read String is :  Python is
+Current file position :  10
+Again read String is :  Python is
+'''
+
+#Close a file
+fo.close()
