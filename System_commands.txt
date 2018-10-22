@@ -1,0 +1,17 @@
+#!/usr/bin/python
+import subprocess
+
+#Case #1:
+subprocess.call(['df', '-h'])
+
+#Case #2:
+subprocess.call('du -sh $HOME', shell=True)
+
+#Case #3:
+p = subprocess.Popen(["echo", "hello world"], stdout=subprocess.PIPE)
+print p.communicate()
+'''
+>>> p = subprocess.Popen(["echo", "hello world"], stdout=subprocess.PIPE)
+>>> print p.communicate()
+('hello world\n', None)
+'''
