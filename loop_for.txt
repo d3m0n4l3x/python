@@ -1,0 +1,53 @@
+#!/usr/bin/python
+#For List
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+#For String
+for x in "banana":
+  print(x)
+
+#Break
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x) 
+  if x == "banana":
+    break
+
+#Continue
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+
+#Rang() function
+for x in range(6):
+  print(x)
+
+for x in range(2, 6):
+  print(x)
+
+for x in range(2, 30, 3):
+  print(x)
+'''
+C:\Users\My Name>python demo_for_range3.py
+2
+5
+8
+11
+14
+17
+20
+23
+26
+29
+'''
+
+#For with Else
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+
