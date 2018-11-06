@@ -15,3 +15,14 @@ print p.communicate()
 >>> print p.communicate()
 ('hello world\n', None)
 '''
+
+#Case #4:
+'''
+Python 3.6.7 (default, Oct 21 2018, 08:08:16) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import subprocess
+>>> ip = subprocess.check_output(['hostname', '-I'])
+>>> print(ip)
+b'192.168.0.2 2604:2000:e8c8:500:9c36:2c6c:d06d:1bd5 \n'
+'''
