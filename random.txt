@@ -1,0 +1,27 @@
+>>> import random
+>>> random.randint(1,6)
+3
+>>> random.randint(1,6)
+2
+>>> random.randint(1,6)
+3
+>>> random.choice(['a','b','c'])
+'c'
+>>> random.choice(['a','b','c'])
+'b'
+>>> random.choice(['a','b','c'])
+'c'
+>>> random.choice(['a','b','c'])
+'b'
+>>> random.choice(['a','b','c'])
+'a'
+>>> import string
+>>> string.ascii_lowercase
+'abcdefghijklmnopqrstuvwxyz'
+>>> random.choice(list(string.ascii_lowercase))
+'g'
+>>> random.choice(list(string.ascii_lowercase))
+'n'
+>>> random.choice(list(string.ascii_lowercase))
+'f'
+
