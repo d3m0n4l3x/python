@@ -1,0 +1,10 @@
+root@demonalex:~# python3
+Python 3.6.7 (default, Oct 21 2018, 08:08:16) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.system('touch ./abc')
+0
+>>> exit()
+root@demonalex:~# file ./abc
+./abc: empty
