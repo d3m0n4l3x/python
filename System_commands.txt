@@ -25,4 +25,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> ip = subprocess.check_output(['hostname', '-I'])
 >>> print(ip)
 b'192.168.0.2 2604:2000:e8c8:500:9c36:2c6c:d06d:1bd5 \n'
+>>> print(ip.decode('utf-8'))
+192.168.0.2 2604:2000:e8c8:500:9c36:2c6c:d06d:1bd5
 '''
