@@ -1,0 +1,12 @@
+#Convert String to List:
+>>> x = "foobar"
+>>> list(x)
+['f', 'o', 'o', 'b', 'a', 'r']
+
+
+#Convert List to String:
+>>> list1 = ['a','b','c']
+>>> str1 = ''.join(list1)
+>>> print(str1)
+abc
+
