@@ -1,0 +1,23 @@
+Compiling Python files
+
+
+
+Compiling PY to EXE:
+
+1) Utilize PIP to install PYINSTALLER:
+>pip install pyinstaller
+
+2) After the installation above is done, leverage PYINSTALLER command to compile PY files into a single EXE file as shown below:
+>pyinstaller -F test.py
+
+3) The final EXE file should be under the %pythonPath%\dist folder.
+
+
+
+Compiling PY to Byte Code (i.e. pyc):
+
+1) Place all compiled PY files into a folder.
+
+2) Utilize CMD to enter the folder and execute the command below:
+>python -m compileall
+
