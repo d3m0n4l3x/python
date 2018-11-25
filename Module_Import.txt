@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+#A self-defined module file located at /root/hello.py
+def hello(name):
+    print("Hello, %s!" % name)
+----------------------------------------------------------
+#!/usr/bin/python3
+#The primary file located at /root/demonalex.py
+import hello
+
+hello.hello("demonalex")
+	
+----------------------------------------------------------
+#./demonalex.py
+Hello, demonalex!
