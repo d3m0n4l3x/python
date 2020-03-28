@@ -45,3 +45,7 @@ a:-)b
 >>> print("42 is the answer, but what is the question?", file=fh)
 >>> fh.close()
 >>>
+>>> a='demon'
+>>> b='alex'
+>>> print(a+b)
+demonalex
