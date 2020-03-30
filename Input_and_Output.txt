@@ -49,3 +49,11 @@ a:-)b
 >>> b='alex'
 >>> print(a+b)
 demonalex
+>>>
+>>> quit()
+# cat ./test2.py
+#!/usr/bin/python3
+print("demon", end="")
+print("alex")
+# python3 ./test2.py
+demonalex
