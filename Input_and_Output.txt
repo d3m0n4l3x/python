@@ -49,7 +49,8 @@ a:-)b
 >>> b='alex'
 >>> print(a+b)
 demonalex
->>>
+>>> print("My", "name", "is", "Alex", "Huang.", sep="-")
+My-name-is-Alex-Huang.
 >>> quit()
 # cat ./test2.py
 #!/usr/bin/python3
