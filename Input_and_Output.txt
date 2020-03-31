@@ -58,3 +58,10 @@ print("demon", end="")
 print("alex")
 # python3 ./test2.py
 demonalex
+
+
+#No Escaping Output:
+>>> print(repr("hello,world!\n"))
+'hello,world!\n'
+>>> print(r"hello,world!\n")
+hello,world!\n
