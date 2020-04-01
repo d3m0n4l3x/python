@@ -1,0 +1,20 @@
+>>> 
+
+>>> a=3
+
+>>> a=int(a)
+
+>>> type(a)
+<class 'int'>
+
+>>> a=float(a)
+
+>>> type(a)
+<class 'float'>
+
+>>> a=str(a)
+
+>>> type(a)
+<class 'str'>
+
+>>> 
