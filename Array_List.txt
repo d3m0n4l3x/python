@@ -33,6 +33,9 @@ Delete/Remove List & Item
 >>> portList.remove(8080)
 >>> portList
 [25, 80, 443, 445, 808, 139]
+>>> del portList[:]
+>>> portList
+[]
 >>> del portList
 
 
