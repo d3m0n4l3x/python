@@ -1,21 +1,68 @@
+Definition & Assignment List
 >>> portList = []
->>> portList.append(21)
->>> portList.append(80)
->>> portList.append(139)
->>> portList.append(23)
->>> print(portList)
-[21, 80, 139, 23]
+>>> portList = [7, 23, "http", "https", 445]
+
+
+Read List
+>>> portList
+[7, 23, "http", "https", 445]
+>>> portList[0]
+7
+>>> portList[1:4]
+[23, "http", "https"]
+
+
+Modify List Item
+>>> portList[1] = 25
+>>> portList[2:4] = [80, 443]
+>>> portList
+[7, 25, 80, 443, 445]
+
+
+Add New Item
+>>> portList.append(808)
+>>> portList = portList + [8080, 139]
+>>> portList
+[7, 25, 80, 443, 445, 808, 8080, 139]
+
+
+Delete/Remove List & Item
+>>> del portList[0]
+>>> portList
+[25, 80, 443, 445, 808, 8080, 139]
+>>> portList.remove(8080)
+>>> portList
+[25, 80, 443, 445, 808, 139]
+>>> del portList
+
+
+Some Methods of List
+>>> portList = [25, 445, 8080, 139, 443, 80]
+>>> portList.reverse()
+>>> portList
+[80, 443, 139, 8080, 445, 25]
 >>> portList.sort()
->>> print(portList)
-[21, 23, 80, 139]
->>> pos = portList.index(21)
+>>> portList
+[25, 80, 139, 443, 445, 8080]
+>>> pos = portList.index(139)
 >>> print(pos)
-0
->>> print(portList[0])
-21
->>> portList.remove(139)
->>> print(portList)
-[21, 23, 80]
->>> print(len(portList))
-3
->>> 
+2
+
+
+Copy List
+>>> portList
+[25, 80, 139, 443, 445, 8080]
+>>> portList2 = portList
+>>> id(portList)
+140483886943624
+>>> id(portList2)
+140483886943624
+>>> portList3 = portList[:]
+>>> id(portList3)
+140483863381960
+>>> portList[0] = 23
+>>> portList2
+[23, 80, 139, 443, 445, 8080]
+>>> portList3
+[25, 80, 139, 443, 445, 8080]
+>>>
