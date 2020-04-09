@@ -1,34 +1,35 @@
-#!/usr/bin/python
+------------------------------------
+#!/usr/bin/python3
 #A common function:
 def my_function():
-  print("Hello from a function")
+    print("Hello from a function")
 
 my_function()
 ------------------------------------
-#!/usr/bin/python
+#!/usr/bin/python3
 #A function with parameters:
 def my_function(fname):
-  print(fname + " Refsnes")
+    print(fname + " Refsnes")
 
 my_function("Emil")
 my_function("Tobias")
 my_function("Linus")
 ------------------------------------
-#!/usr/bin/python
-#A function with a parameter having a default value:
-def my_function(country = "Norway"):
-  print("I am from " + country)
+#!/usr/bin/python3
+def func_amount(a, b, c):
+    print("a = " + str(a), "b = " + str(b), "c = " + str(c), "Amount = " + str( a + b + c))
 
-my_function("Sweden")
-my_function("India")
-my_function()
-my_function("Brazil")
+func_amount(1, 2, 3)
+func_amount(a=1, b=2, c=3)
+func_amount(1, c=3, b=2)
 ------------------------------------
-#!/usr/bin/python
-#Returing a value:
-def my_function(x):
-  return 5 * x
+#!/usr/bin/python3
+def introduction(firstName, lastName="Smith"):
+    print("Hello, my name is", firstName, lastName)
 
-print(my_function(3))
-print(my_function(5))
-print(my_function(9))
+# call the function here
+introduction("Alex")
+introduction(firstName="Alex")
+'''
+It would print out Alex Smith, and Smith is from the default value defined by the function
+'''
