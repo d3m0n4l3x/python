@@ -33,3 +33,14 @@ introduction(firstName="Alex")
 '''
 It would print out Alex Smith, and Smith is from the default value defined by the function
 '''
+------------------------------------
+#!/usr/bin/python3
+def strangeListFunction(n):
+    strangeList = []
+    
+    for i in range(0, n):
+        strangeList.insert(0, i)
+    
+    return strangeList
+
+print(strangeListFunction(5))
